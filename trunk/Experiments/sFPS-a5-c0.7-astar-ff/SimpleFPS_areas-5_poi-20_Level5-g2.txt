@@ -1,0 +1,109 @@
+*****Translate starts
+
+
+Parsing... [0.010s CPU, 0.007s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.009s wall-clock]
+Preparing model... [0.000s CPU, 0.004s wall-clock]
+Generated 134 rules.
+Computing model... [0.040s CPU, 0.036s wall-clock]
+610 relevant atoms
+812 auxiliary atoms
+1422 final queue length
+1785 total queue pushes
+Completing instantiation... [0.030s CPU, 0.028s wall-clock]
+Instantiating: [0.080s CPU, 0.080s wall-clock]
+Computing fact groups...
+Finding invariants...
+29 initial candidates
+Finding invariants: [0.010s CPU, 0.017s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.010s CPU, 0.006s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+13 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.020s CPU, 0.025s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.010s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.002s wall-clock]
+Translating task: [0.020s CPU, 0.024s wall-clock]
+30 implied effects removed
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+30 operators removed
+99 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.004s wall-clock]
+Translator variables: 24
+Translator derived variables: 0
+Translator facts: 79
+Translator mutex groups: 21
+Translator total mutex groups size: 68
+Translator operators: 349
+Translator task size: 1978
+Writing output... [0.010s CPU, 0.002s wall-clock]
+Done! [0.150s CPU, 0.146s wall-clock]
+*****Preprocess starts
+
+
+Building causal graph...
+The causal graph is not acyclic.
+22 variables of 24 necessary
+0 of 21 mutex groups necessary.
+341 of 349 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 75
+Preprocessor derived variables: 0
+Preprocessor task size: 1840
+Writing output...
+done
+
+*****Search starts
+
+
+Dispatcher selected state size 1.
+This is a unit task.
+Simplifying transitions... done!
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 419 unary operators... done! [387 unary operators]
+f = 2 [1 evaluated, 0 expanded, t=0s]
+Best heuristic value: 2 [g=0, 1 evaluated, 0 expanded, t=0s]
+Best heuristic value: 1 [g=1, 5 evaluated, 1 expanded, t=0s]
+Best heuristic value: 0 [g=2, 10 evaluated, 2 expanded, t=0s]
+Solution found!
+Actual search time: 0s [t=0s]
+move-to-point area1 coverpoint3 (1)
+take-cover area1 coverpoint3 (1)
+Plan length: 2 step(s).
+Plan cost: 2
+Initial state h value: 2.
+Expanded 3 state(s).
+Reopened 0 state(s).
+Evaluated 10 state(s).
+Evaluations: 10
+Generated 17 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 0 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Search space hash size: 10
+Search space hash bucket count: 193
+Search time: 0s
+Total time: 0s
+Peak memory: 3176 KB

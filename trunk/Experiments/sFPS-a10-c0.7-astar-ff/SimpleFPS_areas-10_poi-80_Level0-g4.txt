@@ -1,0 +1,124 @@
+*****Translate starts
+
+
+Parsing... [0.010s CPU, 0.011s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.003s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.009s wall-clock]
+Preparing model... [0.000s CPU, 0.005s wall-clock]
+Generated 134 rules.
+Computing model... [0.210s CPU, 0.198s wall-clock]
+4668 relevant atoms
+4075 auxiliary atoms
+8743 final queue length
+12352 total queue pushes
+Completing instantiation... [0.290s CPU, 0.292s wall-clock]
+Instantiating: [0.510s CPU, 0.514s wall-clock]
+Computing fact groups...
+Finding invariants...
+29 initial candidates
+Finding invariants: [0.020s CPU, 0.021s wall-clock]
+Checking invariant weight... [0.010s CPU, 0.005s wall-clock]
+Instantiating groups... [0.080s CPU, 0.082s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+61 uncovered facts
+Choosing groups: [0.000s CPU, 0.004s wall-clock]
+Building translation key... [0.010s CPU, 0.001s wall-clock]
+Computing fact groups: [0.120s CPU, 0.115s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.020s CPU, 0.027s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.020s CPU, 0.017s wall-clock]
+Translating task: [0.250s CPU, 0.249s wall-clock]
+163 implied effects removed
+1 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+163 operators removed
+397 propositions removed
+Detecting unreachable propositions: [0.040s CPU, 0.033s wall-clock]
+Translator variables: 104
+Translator derived variables: 0
+Translator facts: 364
+Translator mutex groups: 101
+Translator total mutex groups size: 343
+Translator operators: 3487
+Translator task size: 18375
+Writing output... [0.020s CPU, 0.021s wall-clock]
+Done! [0.980s CPU, 0.991s wall-clock]
+*****Preprocess starts
+
+
+Building causal graph...
+The causal graph is not acyclic.
+104 variables of 104 necessary
+0 of 101 mutex groups necessary.
+3487 of 3487 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 364
+Preprocessor derived variables: 0
+Preprocessor task size: 18032
+Writing output...
+done
+
+*****Search starts
+
+
+Dispatcher selected state size 1.
+This is a unit task.
+Simplifying transitions... done!
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 3943 unary operators... done! [3760 unary operators]
+f = 9 [1 evaluated, 0 expanded, t=0.08s]
+Best heuristic value: 9 [g=0, 1 evaluated, 0 expanded, t=0.08s]
+Best heuristic value: 8 [g=1, 3 evaluated, 1 expanded, t=0.08s]
+Best heuristic value: 6 [g=1, 7 evaluated, 1 expanded, t=0.08s]
+f = 10 [36 evaluated, 11 expanded, t=0.1s]
+Best heuristic value: 5 [g=5, 41 evaluated, 12 expanded, t=0.1s]
+Best heuristic value: 4 [g=6, 73 evaluated, 19 expanded, t=0.1s]
+Best heuristic value: 3 [g=7, 104 evaluated, 26 expanded, t=0.1s]
+Best heuristic value: 2 [g=8, 113 evaluated, 27 expanded, t=0.1s]
+Best heuristic value: 1 [g=9, 132 evaluated, 28 expanded, t=0.1s]
+Best heuristic value: 0 [g=10, 150 evaluated, 29 expanded, t=0.1s]
+Solution found!
+Actual search time: 0.02s [t=0.1s]
+move-to-point area1 door9-1 (1)
+moving-to-patrol area1 area9 door9-1 (1)
+move-to-point area9 control-box9 (1)
+turn-on-lights area9 control-box9 (1)
+move-to-point-from-point area9 gun12 control-box9 (1)
+place-in-inventory area9 gun12 (1)
+move-to-point area9 coverpoint3 (1)
+take-cover area9 coverpoint3 (1)
+make-contact area9 p (1)
+attack-ranged area9 gun12 p (1)
+Plan length: 10 step(s).
+Plan cost: 10
+Initial state h value: 9.
+Expanded 30 state(s).
+Reopened 0 state(s).
+Evaluated 150 state(s).
+Evaluations: 150
+Generated 481 state(s).
+Dead ends: 3 state(s).
+Expanded until last jump: 11 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 36 state(s).
+Generated until last jump: 154 state(s).
+Search space hash size: 150
+Search space hash bucket count: 193
+Search time: 0.02s
+Total time: 0.1s
+Peak memory: 5148 KB

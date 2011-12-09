@@ -1,0 +1,130 @@
+*****Translate starts
+
+
+Parsing... [0.010s CPU, 0.010s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.009s wall-clock]
+Preparing model... [0.000s CPU, 0.005s wall-clock]
+Generated 134 rules.
+Computing model... [0.150s CPU, 0.145s wall-clock]
+3059 relevant atoms
+3156 auxiliary atoms
+6215 final queue length
+8526 total queue pushes
+Completing instantiation... [0.190s CPU, 0.193s wall-clock]
+Instantiating: [0.370s CPU, 0.360s wall-clock]
+Computing fact groups...
+Finding invariants...
+29 initial candidates
+Finding invariants: [0.010s CPU, 0.019s wall-clock]
+Checking invariant weight... [0.010s CPU, 0.004s wall-clock]
+Instantiating groups... [0.040s CPU, 0.037s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+65 uncovered facts
+Choosing groups: [0.000s CPU, 0.003s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.060s CPU, 0.065s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.002s wall-clock]
+Building mutex information...
+Building mutex information: [0.010s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.011s wall-clock]
+Translating task: [0.150s CPU, 0.156s wall-clock]
+125 implied effects removed
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+125 operators removed
+328 propositions removed
+Detecting unreachable propositions: [0.020s CPU, 0.022s wall-clock]
+Translator variables: 68
+Translator derived variables: 0
+Translator facts: 257
+Translator mutex groups: 65
+Translator total mutex groups size: 231
+Translator operators: 2182
+Translator task size: 11444
+Writing output... [0.010s CPU, 0.013s wall-clock]
+Done! [0.640s CPU, 0.641s wall-clock]
+*****Preprocess starts
+
+
+Building causal graph...
+The causal graph is not acyclic.
+68 variables of 68 necessary
+0 of 65 mutex groups necessary.
+2182 of 2182 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 257
+Preprocessor derived variables: 0
+Preprocessor task size: 11213
+Writing output...
+done
+
+*****Search starts
+
+
+Dispatcher selected state size 1.
+This is a unit task.
+Simplifying transitions... done!
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 2571 unary operators... done! [2409 unary operators]
+f = 13 [1 evaluated, 0 expanded, t=0.06s]
+Best heuristic value: 13 [g=0, 1 evaluated, 0 expanded, t=0.06s]
+f = 14 [14 evaluated, 1 expanded, t=0.06s]
+Best heuristic value: 12 [g=2, 15 evaluated, 2 expanded, t=0.06s]
+Best heuristic value: 11 [g=3, 16 evaluated, 3 expanded, t=0.06s]
+Best heuristic value: 9 [g=4, 32 evaluated, 7 expanded, t=0.06s]
+Best heuristic value: 7 [g=6, 45 evaluated, 9 expanded, t=0.06s]
+Best heuristic value: 6 [g=7, 49 evaluated, 10 expanded, t=0.06s]
+Best heuristic value: 5 [g=8, 53 evaluated, 11 expanded, t=0.06s]
+Best heuristic value: 4 [g=9, 54 evaluated, 12 expanded, t=0.06s]
+Best heuristic value: 3 [g=10, 67 evaluated, 14 expanded, t=0.06s]
+Best heuristic value: 2 [g=11, 69 evaluated, 15 expanded, t=0.06s]
+Best heuristic value: 1 [g=12, 83 evaluated, 16 expanded, t=0.06s]
+Best heuristic value: 0 [g=13, 92 evaluated, 17 expanded, t=0.06s]
+Solution found!
+Actual search time: 0s [t=0.06s]
+move-to-point area8 control-box8 (1)
+turn-on-lights area8 control-box8 (1)
+move-to-point-from-point area8 knife0 control-box8 (1)
+place-in-inventory area8 knife0 (1)
+move-to-point area8 door8-2 (1)
+moving-to-patrol area8 area2 door8-2 (1)
+move-to-point area2 door6-2 (1)
+moving-to-patrol area2 area6 door6-2 (1)
+move-to-point area6 control-box6 (1)
+turn-on-lights area6 control-box6 (1)
+move-to-point-from-point area6 p control-box6 (1)
+make-contact area6 p (1)
+attack-melee area6 knife0 p (1)
+Plan length: 13 step(s).
+Plan cost: 13
+Initial state h value: 13.
+Expanded 18 state(s).
+Reopened 0 state(s).
+Evaluated 96 state(s).
+Evaluations: 96
+Generated 219 state(s).
+Dead ends: 2 state(s).
+Expanded until last jump: 1 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 14 state(s).
+Generated until last jump: 13 state(s).
+Search space hash size: 96
+Search space hash bucket count: 193
+Search time: 0.02s
+Total time: 0.06s
+Peak memory: 4600 KB
